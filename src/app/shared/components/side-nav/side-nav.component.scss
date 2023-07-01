@@ -1,0 +1,76 @@
+.sidenav {
+  position: fixed;
+  align-items: center;
+  justify-content: flex-end;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+}
+li {
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba(orange, 0.4);
+}
+
+li span {
+  display: inline;
+  position: fixed;
+}
+
+li:hover {
+  .circle {
+    animation: rotate 0.5s linear forwards;
+    border: 3px solid transparent;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(45deg);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    background-color: rgba(orange, 0.4);
+  }
+  25% {
+    transform: rotate(135deg);
+    border-right-color: orange;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    transform: rotate(225deg);
+    border-right-color: orange;
+    border-bottom-color: orange;
+    border-left-color: transparent;
+  }
+  75% {
+    transform: rotate(315deg);
+    border-right-color: orange;
+    border-bottom-color: orange;
+    border-left-color: orange;
+    background-color: transparent;
+  }
+  90% {
+    background-color: orange;
+  }
+  100% {
+    transform: rotate(415deg);
+    border-color: orange;
+    border-top-color: transparent;
+    background-color: rgba(orange, 0.1);
+    height: 20px;
+    width: 20px;
+  }
+}

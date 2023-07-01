@@ -1,0 +1,67 @@
+@import "../../../theme/variables";
+
+section#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 150px;
+
+  .name-pacifico {
+    width: 100%;
+    height: auto;
+    max-width: 330px;
+  }
+  .btn {
+    max-width: fit-content;
+    background-color: white;
+    box-shadow: -4px 7px 14px 0px rgba(0, 0, 0, 0.025);
+    transition: box-shadow 0.3s linear, transform 0.3s linear;
+    border: none;
+    padding-inline: 2.5rem;
+    font-weight: bolder;
+  }
+  .btn:hover {
+    box-shadow: -2px 5px 0px $body-color;
+    transform: scale(1.0125);
+  }
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+
+  .lead {
+    font-size: 20px;
+    line-height: 1.16;
+    letter-spacing: -0.00125em;
+    margin-top: 0px;
+  }
+}
+.typed-container {
+  display: inline-block;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 3s;
+  animation-timing-function: steps(30, end);
+  animation-iteration-count: infinite;
+  padding-top: 0 !important;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  30%,
+  90% {
+    width: 100%;
+    filter: none;
+  }
+  100% {
+    filter: blur(8px);
+  }
+}

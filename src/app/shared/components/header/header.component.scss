@@ -1,0 +1,26 @@
+.navbar::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(white, 0.09);
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(20px) saturate(100%);
+  z-index: -1;
+  border-bottom: 1px solid rgba(white, 0.01);
+}
+
+svg {
+  fill: currentColor;
+  width: 100%;
+  height: auto;
+  max-width: 65px;
+}
+.navbar-toggler {
+  border: none;
+}
+
+::host .bg-purple {
+  .navbar {
+    background-color: red;
+  }
+}

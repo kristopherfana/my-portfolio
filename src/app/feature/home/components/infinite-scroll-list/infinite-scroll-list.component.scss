@@ -1,0 +1,59 @@
+@import "../../../../../theme/variables";
+
+ul {
+  list-style: none;
+  display: flex;
+  width: 150vw;
+  padding: 0;
+  overflow-x: scroll;
+  animation: scroll 10s linear infinite alternate;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline-end: 2rem;
+  margin-block: 1rem;
+}
+#infinite-scroll-container {
+  position: relative;
+  overflow-x: hidden;
+}
+#infinite-scroll-container::before {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    $body-bg,
+    transparent,
+    transparent,
+    transparent,
+    $body-bg
+  );
+}
+ul::-webkit-scrollbar {
+  display: none;
+}
+
+ul::-webkit-scrollbar-track {
+  display: none;
+}
+
+ul::-webkit-scrollbar-thumb {
+  display: none;
+}
+@keyframes scroll {
+  100% {
+    transform: translateX(-30%);
+  }
+}
+ul svg {
+  height: auto;
+  min-width: 100%;
+  max-height: 20px;
+  aspect-ratio: initial;
+  fill: rgba($body-color, 0.6);
+}

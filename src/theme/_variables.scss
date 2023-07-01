@@ -1,0 +1,54 @@
+$body-bg: #f3f3f7;
+$body-bg-dark: #111219;
+$body-color: #181b31;
+$font-family-sans-serif: "Good Sans", Helvetica;
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 5;
+$h2-font-size: $font-size-base * 3.5;
+$display-font-weight: 800;
+$display-line-height: 1.5;
+$input-border-color: transparent;
+$border-radius: 12px;
+$input-btn-padding-x: 1.5rem;
+$input-btn-padding-y: 0.7rem;
+$input-btn-focus-width: 0rem;
+$input-btn-padding-y-lg: 1rem;
+$input-btn-focus-color: rgba(black, 0.25);
+$enable-webkit-text-size-adjust: false;
+$text-size-adjust: 100%;
+$enable-text-align-webkit-match-parent: false !default;
+$text-align-replace-webkit-match-parent: true !default;
+$grid-gutter-width: 3.5rem;
+$lead-font-size: 1.25rem;
+$line-height-base: 1.16;
+
+$display-font-sizes: (
+  1: 4rem,
+) !default;
+
+.bg-purple {
+  background-color: $body-bg-dark !important;
+  color: $body-bg;
+}
+.bg-purple nav {
+  $navbar-icon-color: rgba($body-bg, 0.75);
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    transition: color 0.3s ease;
+  }
+  svg {
+    fill: $body-bg;
+    transition: fill 0.3s ease;
+  }
+}
+.bg-purple .navbar::before {
+  background-color: rgba(white, 0.01) !important;
+  transition: background-color 0.3s ease;
+}
+* {
+  letter-spacing: -0.005em;
+}
+.display-1 {
+  letter-spacing: -0.0025rem;
+}
