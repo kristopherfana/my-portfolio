@@ -1,3 +1,4 @@
+import { APP_BASE_HREF } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -10,7 +11,7 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [{
     provide: APP_BASE_HREF,
-    useValue: "/"
+    useValue: "/my-portfolio"
   }]
 })
 export class AppRoutingModule { }
