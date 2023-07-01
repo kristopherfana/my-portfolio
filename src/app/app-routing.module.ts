@@ -11,7 +11,7 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [{
     provide: APP_BASE_HREF,
-    useValue: "/my-portfolio"
+    useValue: "/my-portfolio/"
   }]
 })
 export class AppRoutingModule { }
