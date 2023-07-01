@@ -15180,3 +15180,4 @@ Account{name=send, path=C:/Users/Kris/Desktop/Frontends/my-portfolio/node_module
 Account{name=..., path=..., type=PREDICT}
 2023-07-01 21:47:09.328 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.account.AccountManager - [client:40010105]load account manager finish
 2023-07-01 21:47:09.331 [pool-3-thread-1] INFO  com.rs.mv.mvvs.instance.userspace.UserspaceManager - [framework:30010402]config file(C:\Users\Kris/.rmv/config) watcher launch successful
+2023-07-01 22:11:33.812 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.catalog.from.scan.CurrentPathScanner - [client:400205]scan file in current open file directory(C:/Users/Kris/Desktop/Frontends/my-portfolio/src/app)
