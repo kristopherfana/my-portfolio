@@ -1,5 +1,12 @@
-<div class="wrapper" [ngClass]="{ 'bg-purple': bgColor }">
-  <app-header [ngClass]="{ 'bg-purple': bgColor }"></app-header>
+<div
+  class="wrapper"
+  [ngClass]="{
+    'bg-orange': bgColorValue == 'orange',
+    'bg-purple': bgColorValue == 'purple',
+    'bg-black': bgColorValue == 'black'
+  }"
+>
+  <app-header></app-header>
   <main>
     <div class="container">
       <router-outlet></router-outlet>

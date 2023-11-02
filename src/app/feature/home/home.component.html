@@ -1,41 +1,79 @@
 <section id="hero">
-  <div class="row">
-    <div class="col-lg-8">
-      <div class="row text-cente">
-        <p class="display-1 col-lg-10">
-          Hi, My name is
-          <img
-            src="assets/svg/kristopher-fana-pacifico.svg"
-            alt="Kristopher Fana"
-          />
-          <span class="typed-container">
-            <p class="display-1 typed">Frontend Developer</p>
-          </span>
-        </p>
-        <p class="lead col-lg-11">
-          I am an Angular Frontend developer who turns wireframes into
-          Masterpieces... or nightmares, depending on the day.
-        </p>
-      </div>
-      <button class="btn btn-light my-5" type="button" tabindex="0">
-        Get in touch
-      </button>
+  <div class="row justify-content-center">
+    <div class="align-center text-center justify-content-center">
+      <p class="display-1">
+        Hi, I'm Kris. I am a
+        <br />
+        <span class="typed-container">
+          <p class="display-1 typed">{{ title }}</p>
+        </span>
+      </p>
+      <p
+        class="lead col-lg-9 text-center mx-auto justify-self-center my-2 my-lg-0"
+      >
+        I am an Angular Frontend developer who turns wireframes into
+        Masterpieces... or nightmares, depending on the day.
+      </p>
     </div>
-    <div class="col-lg-4">
-      <img src="assets/svg/my-memoji-art.svg" alt="hero-img" />
+    <button class="btn btn-dark my-4 mb-5 my-lg-5" type="button" tabindex="0">
+      Get in touch
+    </button>
+  </div>
+  <!-- <div id="skills">
+    <p class="visually-hidden">My SKills:</p>
+    <ul id="infinite-scroll" class="my-5">
+      <li><img src="assets/svg/Angular.svg" alt="Angular" /></li>
+      <li><img src="assets/svg/Sass.svg" alt="Sass" /></li>
+      <li><img src="assets/svg/HTML.svg" alt="HTML" /></li>
+      <li><img src="assets/svg/Springboot.svg" alt="Springboot" /></li>
+      <li><img src="assets/svg/Bootstrap.svg" alt="Bootstrap" /></li>
+      <li><img src="assets/svg/Node.svg" alt="Node" /></li>
+      <li><img src="assets/svg/Typescript.svg" alt="Typescript" /></li>
+      <li><img src="assets/svg/Sass.svg" alt="Sass" /></li>
+      <li><img src="assets/svg/HTML.svg" alt="HTML" /></li>
+      <li><img src="assets/svg/Springboot.svg" alt="Springboot" /></li>
+      <li><img src="assets/svg/Bootstrap.svg" alt="Bootstrap" /></li>
+      <li><img src="assets/svg/Node.svg" alt="Node" /></li>
+      <li><img src="assets/svg/Typescript.svg" alt="Typescript" /></li>
+    </ul>
+  </div> -->
+</section>
+<section id="projects">
+  <h2 class="visually-hidden">Projects</h2>
+  <div class="row" id="weatherly" #weatherly>
+    <div class="col-lg-3 d-flex flex-column justify-content-center">
+      <p class="project-name mb-1">Weatherly</p>
+      <p class="project-description">
+        Revamping and reimagining a weather app to create an enhanced and
+        user-friendly experience.
+      </p>
+    </div>
+    <div class="project-card col-lg-8">
+      <img
+        src="assets/images/weatherly-mockup.png"
+        alt="Weathery UI Mockup"
+        class="project-mockup"
+      />
+    </div>
+  </div>
+  <div class="row" id="claytonBooking" #claytonBooking>
+    <a class="project-card col-lg-8">
+      <img
+        src="assets/images/clayton-mockup.png"
+        alt="Clayton Booking UI Mockup"
+        class="project-mockup"
+      />
+    </a>
+    <div class="col-lg-3 d-flex flex-column justify-content-center">
+      <p class="project-name mb-1">Clayton Booking</p>
+      <p class="project-description">
+        Revamping a barber booking app for a seamless and user-friendly
+        scheduling experience.
+      </p>
     </div>
   </div>
 </section>
-<!-- <section id="project-section">
-  <h2>Projects</h2>
-  <article class="card">
-    <div class="card-body">
-      <h4 class="card-title">Title</h4>
-      <p class="card-text">Text</p>
-    </div>
-  </article>
-</section> -->
-<!-- <section id="about-me">
+<section id="about-me">
   <h2>About Me</h2>
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed iure
@@ -49,21 +87,151 @@
     placeat consectetur? Fugit ad officiis iusto cum animi ullam in excepturi
     sint?
   </p>
-</section> -->
-
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quibusdam
-  veritatis commodi, facilis fugiat maiores, laboriosam tenetur sequi
-  voluptatem, consequuntur aliquid nostrum eius recusandae excepturi? Aliquid
-  sequi quam nesciunt tempore?
-</p>
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aperiam
-  error facere iure ipsa perspiciatis porro nisi, perferendis enim libero esse
-  accusamus quae earum omnis obcaecati distinctio, doloribus quibusdam totam.
-</p>
-<p>
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis nobis
-  laborum in obcaecati rerum fuga adipisci incidunt, et molestiae sed voluptate
-  labore, accusamus dolorem quos reiciendis odio necessitatibus placeat aliquam!
-</p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, praesentium
+    magni. Quaerat in iste ullam voluptas impedit dolore totam neque asperiores,
+    ab aspernatur velit beatae illum magnam dolores optio repellendus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+    doloribus error, perferendis accusamus necessitatibus dolorem facere unde
+    perspiciatis non distinctio nulla vel eius atque voluptates suscipit laborum
+    blanditiis laboriosam consectetur.
+  </p>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente eos
+    laboriosam similique doloremque quidem vero obcaecati voluptatibus nihil
+    ipsa quos ab ratione at ut, dignissimos quaerat tempore aperiam sed.
+  </p>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius mollitia
+    nostrum repudiandae impedit est corporis maxime eveniet ducimus illo,
+    incidunt error praesentium rem repellat quisquam dolorem enim, quidem vel
+    adipisci!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed iure
+    dolore aspernatur architecto in, pariatur praesentium repellendus nihil iste
+    nesciunt quae veniam suscipit. Explicabo eveniet quis voluptate consequatur
+    ea?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+    reprehenderit numquam. Nemo omnis nihil libero numquam amet? Quisquam,
+    placeat consectetur? Fugit ad officiis iusto cum animi ullam in excepturi
+    sint?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, praesentium
+    magni. Quaerat in iste ullam voluptas impedit dolore totam neque asperiores,
+    ab aspernatur velit beatae illum magnam dolores optio repellendus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+    doloribus error, perferendis accusamus necessitatibus dolorem facere unde
+    perspiciatis non distinctio nulla vel eius atque voluptates suscipit laborum
+    blanditiis laboriosam consectetur.
+  </p>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente eos
+    laboriosam similique doloremque quidem vero obcaecati voluptatibus nihil
+    ipsa quos ab ratione at ut, dignissimos quaerat tempore aperiam sed.
+  </p>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius mollitia
+    nostrum repudiandae impedit est corporis maxime eveniet ducimus illo,
+    incidunt error praesentium rem repellat quisquam dolorem enim, quidem vel
+    adipisci!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed iure
+    dolore aspernatur architecto in, pariatur praesentium repellendus nihil iste
+    nesciunt quae veniam suscipit. Explicabo eveniet quis voluptate consequatur
+    ea?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+    reprehenderit numquam. Nemo omnis nihil libero numquam amet? Quisquam,
+    placeat consectetur? Fugit ad officiis iusto cum animi ullam in excepturi
+    sint?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, praesentium
+    magni. Quaerat in iste ullam voluptas impedit dolore totam neque asperiores,
+    ab aspernatur velit beatae illum magnam dolores optio repellendus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+    doloribus error, perferendis accusamus necessitatibus dolorem facere unde
+    perspiciatis non distinctio nulla vel eius atque voluptates suscipit laborum
+    blanditiis laboriosam consectetur.
+  </p>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente eos
+    laboriosam similique doloremque quidem vero obcaecati voluptatibus nihil
+    ipsa quos ab ratione at ut, dignissimos quaerat tempore aperiam sed.
+  </p>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius mollitia
+    nostrum repudiandae impedit est corporis maxime eveniet ducimus illo,
+    incidunt error praesentium rem repellat quisquam dolorem enim, quidem vel
+    adipisci!
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sed iure
+    dolore aspernatur architecto in, pariatur praesentium repellendus nihil iste
+    nesciunt quae veniam suscipit. Explicabo eveniet quis voluptate consequatur
+    ea?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+    reprehenderit numquam. Nemo omnis nihil libero numquam amet? Quisquam,
+    placeat consectetur? Fugit ad officiis iusto cum animi ullam in excepturi
+    sint?
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, praesentium
+    magni. Quaerat in iste ullam voluptas impedit dolore totam neque asperiores,
+    ab aspernatur velit beatae illum magnam dolores optio repellendus.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+    doloribus error, perferendis accusamus necessitatibus dolorem facere unde
+    perspiciatis non distinctio nulla vel eius atque voluptates suscipit laborum
+    blanditiis laboriosam consectetur.
+  </p>
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente eos
+    laboriosam similique doloremque quidem vero obcaecati voluptatibus nihil
+    ipsa quos ab ratione at ut, dignissimos quaerat tempore aperiam sed.
+  </p>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius mollitia
+    nostrum repudiandae impedit est corporis maxime eveniet ducimus illo,
+    incidunt error praesentium rem repellat quisquam dolorem enim, quidem vel
+    adipisci!
+  </p>
+</section>
+<section id="contact-me" #contactMe>
+  <p class="display-1 mt-5">Let's do something together.</p>
+  <p class="lead col-lg-10">
+    Are you tired of working alone and having all the credit (and blame) for
+    your projects? Look no further - I'm here to share the spotlight (and the
+    workload) with you. Let's partner up and take the world by storm.
+  </p>
+  <button class="btn btn-light my-3 contact-me-btn" type="button" tabindex="0">
+    <span>Contact me</span>
+    <svg
+      width="22"
+      height="20"
+      viewBox="0 0 22 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0.454867 8.066L0.454867 12.46L13.2989 12.46L9.06087 16.698L12.1029 19.714L21.5149 10.276L12.1029 0.837999L9.08687 3.88L13.2989 8.066L0.454867 8.066Z"
+        fill="white"
+      ></path>
+    </svg>
+  </button>
+</section>

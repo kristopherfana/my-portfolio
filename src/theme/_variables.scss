@@ -1,8 +1,13 @@
 $body-bg: #f3f3f7;
-$body-bg-dark: #111219;
+$body-bg-purple: #c5cafc;
+$body-bg-orange: #b6c8fb;
+$body-bg-black: #000000;
+$body-color-black: #fff;
+$body-color-orange: #000000;
 $body-color: #181b31;
+$body-color-purple: #000000;
 $font-family-sans-serif: "Good Sans", Helvetica;
-$font-size-base: 1rem;
+$font-size-base: 1.25rem;
 $h1-font-size: $font-size-base * 5;
 $h2-font-size: $font-size-base * 3.5;
 $display-font-weight: 800;
@@ -10,7 +15,7 @@ $display-line-height: 1.5;
 $input-border-color: transparent;
 $border-radius: 12px;
 $input-btn-padding-x: 1.5rem;
-$input-btn-padding-y: 0.7rem;
+$input-btn-padding-y: 0.6rem;
 $input-btn-focus-width: 0rem;
 $input-btn-padding-y-lg: 1rem;
 $input-btn-focus-color: rgba(black, 0.25);
@@ -18,19 +23,34 @@ $enable-webkit-text-size-adjust: false;
 $text-size-adjust: 100%;
 $enable-text-align-webkit-match-parent: false !default;
 $text-align-replace-webkit-match-parent: true !default;
-$grid-gutter-width: 3.5rem;
-$lead-font-size: 1.25rem;
+$grid-gutter-width: 2rem;
+$lead-font-size: 1.4rem;
 $line-height-base: 1.16;
+$navbar-toggler-font-size: $font-size-base;
+$navbar-padding-y: 0.4rem;
 
 $display-font-sizes: (
   1: 4rem,
+  2: 3rem,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1150px,
+  xxl: 1230px,
 ) !default;
 
-.bg-purple {
-  background-color: $body-bg-dark !important;
-  color: $body-bg;
+bg-black {
+  background-color: $body-bg-black !important;
+  color: $body-color-black !important;
 }
-.bg-purple nav {
+.bg-purple {
+  background-color: $body-bg-purple !important;
+  color: $body-color-purple !important;
+}
+.bg-orange nav {
   $navbar-icon-color: rgba($body-bg, 0.75);
 
   .navbar-toggler-icon {
@@ -42,13 +62,26 @@ $display-font-sizes: (
     transition: fill 0.3s ease;
   }
 }
-.bg-purple .navbar::before {
+.bg-orange .navbar::before {
   background-color: rgba(white, 0.01) !important;
   transition: background-color 0.3s ease;
+}
+
+.bg-orange {
+  background-color: $body-bg-orange !important;
+  color: $body-color-orange !important;
 }
 * {
   letter-spacing: -0.005em;
 }
-.display-1 {
-  letter-spacing: -0.0025rem;
+.display-1,
+.display-2,
+h1,
+h2,
+h3 {
+  letter-spacing: -0.1rem;
+}
+
+.btn-dark {
+  background-color: black;
 }

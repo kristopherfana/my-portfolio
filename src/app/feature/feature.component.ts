@@ -1,36 +1,19 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import { FooterComponent } from '../shared/components/footer/footer.component';
+import { Component } from '@angular/core';
+import { BackgroundService } from '../shared/Services/background.service';
 
 @Component({
   selector: 'app-feature',
   templateUrl: './feature.component.html',
   styleUrls: ['./feature.component.scss']
 })
-export class FeatureComponent implements AfterViewInit {
-  bgColor = false; // set the initial background color
-  @ViewChild(FooterComponent, { read: ElementRef }) footerRef!: ElementRef<HTMLElement>;
-  observer!: IntersectionObserver;
+export class FeatureComponent {
+  bgColorValue: string | undefined;
 
-  ngAfterViewInit() {
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.7 // set the threshold to 10%
-    };
+  constructor(private backgroundService: BackgroundService) { }
 
-    this.observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            this.bgColor = true;
-          } else {
-            this.bgColor = false;
-          }
-        });
-      },
-      options
-    );
-
-    this.observer.observe(this.footerRef.nativeElement);
+  bgColor$ = this.backgroundService.getBgColorByValue().subscribe(value => this.bgColorValue = value);
+  ngOnInit() {
+    console.log(this.bgColor$)
   }
+
 }
