@@ -1,18 +1,40 @@
-<ul class="sidenav px-4">
-  <li>
-    <div class="circle"></div>
-    <!-- <span>Home</span> -->
-  </li>
-  <li>
-    <div class="circle"></div>
-    <!-- <span>Projects</span> -->
-  </li>
-  <li>
-    <div class="circle"></div>
-    <!-- <span>About</span> -->
-  </li>
-  <li>
-    <div class="circle"></div>
-    <!-- <span>Contact</span> -->
-  </li>
-</ul>
+<div class="offcanvas-body">
+  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="'/home'"
+        routerLinkActive="active"
+        data-bs-dismiss="offcanvas"
+        >Home</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="'projects'"
+        routerLinkActive="active"
+        data-bs-dismiss="offcanvas"
+        >Projects</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="'about'"
+        routerLinkActive="active"
+        data-bs-dismiss="offcanvas"
+        >About Me</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="'contact'"
+        routerLinkActive="active"
+        data-bs-dismiss="offcanvas"
+        >Contact</a
+      >
+    </li>
+  </ul>
+</div>

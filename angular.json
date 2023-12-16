@@ -24,8 +24,10 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": ["node_modules/aos/dist/aos.css", "src/styles.scss"],
             "scripts": [
+              "node_modules/gsap/dist/gsap.min.js",
+              "node_modules/aos/dist/aos.js",
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
@@ -88,6 +90,9 @@
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

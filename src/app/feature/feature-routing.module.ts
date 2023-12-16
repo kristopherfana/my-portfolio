@@ -9,11 +9,24 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+      },
+      {
+        path: 'home',
         loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
       },
       {
         path: 'projects',
         loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule)
+      },
+      {
+        path: 'about',
+        loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
+      },
+      {
+        path: 'contact',
+        loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)
       },
       {
         path: 'not-found',

@@ -13,7 +13,6 @@ export class FeatureComponent {
 
   bgColor$ = this.backgroundService.getBgColorByValue().subscribe(value => this.bgColorValue = value);
   ngOnInit() {
-    console.log(this.bgColor$)
   }
 
 }

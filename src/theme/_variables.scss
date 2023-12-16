@@ -1,17 +1,22 @@
+//Body
 $body-bg: #f3f3f7;
 $body-bg-purple: #c5cafc;
 $body-bg-orange: #b6c8fb;
-$body-bg-black: #000000;
-$body-color-black: #fff;
+$body-bg-gray: #d8d8d8;
+$body-color-gray: #000000;
 $body-color-orange: #000000;
 $body-color: #181b31;
 $body-color-purple: #000000;
+
+//Typography
 $font-family-sans-serif: "Good Sans", Helvetica;
 $font-size-base: 1.25rem;
 $h1-font-size: $font-size-base * 5;
 $h2-font-size: $font-size-base * 3.5;
 $display-font-weight: 800;
 $display-line-height: 1.5;
+
+//Utilities
 $input-border-color: transparent;
 $border-radius: 12px;
 $input-btn-padding-x: 1.5rem;
@@ -28,6 +33,14 @@ $lead-font-size: 1.4rem;
 $line-height-base: 1.16;
 $navbar-toggler-font-size: $font-size-base;
 $navbar-padding-y: 0.4rem;
+$navbar-brand-color: $body-color;
+
+//Offcanvas
+$offcanvas-padding-x: 3rem;
+$offcanvas-padding-y: 4rem;
+$nav-link-padding-y: 0.75rem;
+$nav-link-font-size: 3rem;
+$nav-link-color: rgba(255, 0, 0, 0.3) !important;
 
 $display-font-sizes: (
   1: 4rem,
@@ -42,9 +55,9 @@ $container-max-widths: (
   xxl: 1230px,
 ) !default;
 
-bg-black {
-  background-color: $body-bg-black !important;
-  color: $body-color-black !important;
+.bg-gray {
+  background-color: $body-bg-gray !important;
+  color: $body-color-gray !important;
 }
 .bg-purple {
   background-color: $body-bg-purple !important;

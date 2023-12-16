@@ -5,11 +5,6 @@ section {
   flex-direction: column;
   padding-block: 50px;
 }
-img,
-svg {
-  width: 100%;
-  height: auto;
-}
 .btn {
   max-width: fit-content;
   padding-inline-end: 2.5rem;
@@ -110,8 +105,100 @@ svg {
       max-height: 26px;
     }
   }
+  .scrolldown-wrapper {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .scrolldown {
+    border: 2px solid #181b31;
+    border-radius: 30px;
+    height: 46px;
+    margin: 0 auto 8px;
+    text-align: center;
+    width: 30px;
+  }
+
+  .scrolldown-p1,
+  .scrolldown-p2 {
+    animation-duration: 1.5s;
+    animation-name: scrolldown;
+    animation-iteration-count: infinite;
+    fill: #181b31;
+  }
+
+  .scrolldown-p2 {
+    animation-delay: 0.75s;
+  }
+
+  @keyframes scrolldown {
+    0% {
+      opacity: 0;
+      transform: translate(0, -8px);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(0, 8px);
+    }
+  }
+}
+#my-skills {
+  h2 {
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .square {
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-left: none;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins";
+
+    img {
+      width: auto;
+      height: 100%;
+      max-width: 35px;
+      max-height: 35px;
+      margin-right: 0.6rem;
+      opacity: 0.85;
+    }
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .square:first-child {
+    border-left: 2px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .row-1,
+  .row-2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 200px;
+  }
+  .row-1 {
+    .square {
+      border-bottom: none;
+    }
+  }
 }
 #projects {
+  padding-bottom: 0px !important;
   .row {
     transition: all 0.55s ease;
     z-index: 1;
@@ -151,11 +238,14 @@ svg {
     background-color: red;
     z-index: 1000;
   }
-  .project-description,
-  .project-name {
+  .project-description {
     font-weight: 500;
     line-height: 1.4em;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+  }
+  .project-name {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
   }
   .project-description {
     max-height: 580px;
@@ -179,6 +269,21 @@ svg {
     .col-lg-3 {
       max-height: 470px;
     }
+  }
+}
+#titles {
+  h1 {
+    font-size: 170px;
+  }
+  .name-wrap {
+    min-width: 350%;
+  }
+  .mb-5 {
+    margin-bottom: 4.5rem !important;
+  }
+  .title1 {
+    position: relative;
+    left: -2500px;
   }
 }
 #contact-me {
