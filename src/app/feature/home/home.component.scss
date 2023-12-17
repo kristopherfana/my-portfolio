@@ -17,19 +17,6 @@ section {
   font-size: 1.25rem;
 }
 
-// .btn::after {
-//   content: "";
-//   display: inline-block;
-//   height: 10px;
-//   padding-block: auto;
-//   margin-inline: 20px;
-//   width: 20px;
-//   background-color: rgb(255, 255, 255);
-//   z-index: 1;
-//   vertical-align: middle;
-//   transition: all 0.5s ease;
-// }
-
 .btn:hover::after {
   transform: translateX(30px);
   margin-inline-end: 30px;
